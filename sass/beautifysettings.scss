@@ -1,0 +1,139 @@
+@import "compass/reset";
+@import "compass";
+
+body {
+  background: #eaeaea;
+  color: #333;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Geneva, sans-serif;
+  font-size: 12px;
+}
+
+.switch-area {
+  background: #f1f1f1;
+  background: -webkit-linear-gradient(top, #ebebeb, #dcdcdc);
+  border-bottom: 1px solid rgba(0,0,0, .25);
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+#settings {
+  border-top: 1px solid rgba(255, 255, 255, .5);
+}
+
+#langswitch option {
+  font-weight: bold;
+}
+
+.option-item {
+  @include pie-clearfix();
+  display: block;
+  padding: 4px 12px;
+  border-top: 1px solid rgba(255, 255, 255, .35);
+  border-bottom: 1px solid rgba(0,0,0, .1);
+  min-height: 34px;
+  min-width: 435px;
+  &:first-child {
+    border-top: none;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.option-checkbox-container {
+  float: left;
+  margin-top: 3px;
+  width: 386px;
+}
+
+.label-container {
+  display: block;
+  float:left;
+  width: 235px;
+  padding-top: 3px;
+}
+
+.input-container {
+  display: block;
+  float: left;
+  width: 150px;
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 90%;
+  }
+}
+
+.option-hint-container {
+  display: block;
+  float: left;
+  margin-top: 3px;
+  position: relative;
+  &:hover {
+    .option-hint {
+      display: block;
+    }
+  }
+}
+
+.option-hint-icon {
+  @include border-radius(2px);
+  display: block;
+  color: #666;
+  cursor: default;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, .15);
+}
+
+.option-hint {
+  position: absolute;
+  bottom: 16px;
+  right: -12px;
+  width: 180px;
+  display: none;
+  padding-bottom: 5px;
+  line-height: 1.5;
+  p {
+    @include border-radius(2px);
+    background: -webkit-linear-gradient(top, #abb6c0, #85939d);
+    border-top: 1px solid darken(#abb6c0, 20);
+    border-left: 1px solid darken(#98a5af, 20);
+    border-right: 1px solid darken(#98a5af, 20);
+    border-bottom: 1px solid darken(#98a5af, 20);
+    color: #fff;
+    text-shadow: 0 1px 0 #555;
+    font-size: 11px;
+    padding: 6px;
+  }
+  &:after {
+    content: inline-image('help-pointer.png');
+    position: absolute;
+    bottom: 7px;
+    right: 16px;
+    width: 7px;
+    height: 5px;
+    line-height: 1;
+  }
+}
+
+label {
+  vertical-align: baseline;
+}
+
+
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  margin-left: 6px;
+  vertical-align: baseline;
+}
+
+.hide {
+  display: none;
+}

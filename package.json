@@ -1,0 +1,28 @@
+{
+  "name": "Beautify",
+  "version": "1.0.0",
+  "description": "Pretty-format JS, HTML and CSS with JSBeautify.",
+  "main": "init.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/franzheidl/beautify.chocmixin.git"
+  },
+  "keywords": [
+  "javascript",
+  "beautify",
+  "format",
+  "pretty",
+  "prettify"
+  ],
+  "author": "Franz Heidl",
+  "license": "MIT",
+  "dependencies": {
+    "js-beautify": "1.4.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.3",
+    "grunt-contrib-watch": "~0.5.3",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-compass": "~0.7.2"
+  }
+}
