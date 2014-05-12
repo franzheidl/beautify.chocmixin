@@ -8,20 +8,19 @@ MIT License
 */
 
 var beautify = require('js-beautify');
-var fs = require('fs');
 var win;
 var langs = ['JS', 'HTML', 'CSS'];
 
-var DEFAULT_OPTIONS = { // TODO: make sure to save actual JS Beautify defaults on release!
+var DEFAULT_OPTIONS = {
   JS: {
-    indent_size: 2,
+    indent_size: 4,
     indent_char: ' ',
     indent_level: 0,
     indent_with_tabs: false,
     preserve_newlines: true,
     max_preserve_newlines: 10,
     jslint_happy: false,
-    brace_style: 'expand',
+    brace_style: 'collapse',
     keep_array_indentation: false,
     keep_function_indentation: false,
     space_in_paren: true,
@@ -42,7 +41,7 @@ var DEFAULT_OPTIONS = { // TODO: make sure to save actual JS Beautify defaults o
     unformatted: []
   },
   CSS: {
-    indent_size: 2,
+    indent_size: 4,
     indent_char: ' '
   }
 };

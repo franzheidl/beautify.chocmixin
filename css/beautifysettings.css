@@ -13,7 +13,7 @@ q:before, q:after, blockquote:before, blockquote:after { content: ""; content: n
 
 a img { border: none; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 body { background: #eaeaea; color: #333; font-family: "Lucida Grande", "Lucida Sans Unicode", Geneva, sans-serif; font-size: 12px; }
 
