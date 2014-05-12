@@ -1,6 +1,6 @@
 {
   "name": "Beautify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pretty-format JS, HTML and CSS with JSBeautify.",
   "main": "init.js",
   "repository": {
